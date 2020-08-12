@@ -3,10 +3,21 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4F11CC1424E4364600EA1419 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F11CC1324E4364600EA1419 /* LoginViewController.swift */; };
+		4F11CC1724E4396C00EA1419 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F11CC1624E4396C00EA1419 /* File.swift */; };
+		4F11CC1924E439B500EA1419 /* HotelListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F11CC1824E439B500EA1419 /* HotelListViewController.swift */; };
+		4F11CC1C24E43F0800EA1419 /* HotelListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F11CC1B24E43F0800EA1419 /* HotelListTableViewCell.swift */; };
+		4F11CC1E24E4425E00EA1419 /* HotelDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F11CC1D24E4425E00EA1419 /* HotelDetailsViewController.swift */; };
+		4F11CC2024E448AF00EA1419 /* HotelLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F11CC1F24E448AF00EA1419 /* HotelLocationViewController.swift */; };
+		4F11CC2424E450B900EA1419 /* HeaderHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F11CC2324E450B900EA1419 /* HeaderHelper.swift */; };
+		4F11CC2724E450C100EA1419 /* RequestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F11CC2524E450C000EA1419 /* RequestHelpers.swift */; };
+		4F11CC2824E450C100EA1419 /* RequestUrls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F11CC2624E450C100EA1419 /* RequestUrls.swift */; };
+		4F13E23A24E4523200B3D06B /* HotelViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F13E23924E4523200B3D06B /* HotelViewModel.swift */; };
+		4F13E23C24E453B000B3D06B /* HotelModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F13E23B24E453B000B3D06B /* HotelModel.swift */; };
 		4F7A72BB24E434CE0012A788 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7A72BA24E434CE0012A788 /* AppDelegate.swift */; };
 		4F7A72BD24E434CE0012A788 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7A72BC24E434CE0012A788 /* SceneDelegate.swift */; };
 		4F7A72BF24E434CE0012A788 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7A72BE24E434CE0012A788 /* ViewController.swift */; };
@@ -16,6 +27,9 @@
 		4F7A72CA24E434D00012A788 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F7A72C824E434D00012A788 /* LaunchScreen.storyboard */; };
 		4F7A72D524E434D00012A788 /* ElegantMediaiOSPracticalAssignmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7A72D424E434D00012A788 /* ElegantMediaiOSPracticalAssignmentTests.swift */; };
 		4F7A72E024E434D00012A788 /* ElegantMediaiOSPracticalAssignmentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7A72DF24E434D00012A788 /* ElegantMediaiOSPracticalAssignmentUITests.swift */; };
+		6EEAC2DF0FFD14737F061D25 /* Pods_ElegantMediaiOSPracticalAssignment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83999719FCD8063AC9296651 /* Pods_ElegantMediaiOSPracticalAssignment.framework */; };
+		8FCC801951E940C1406BCDBA /* Pods_ElegantMediaiOSPracticalAssignmentTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48316B739ADEFF916709938A /* Pods_ElegantMediaiOSPracticalAssignmentTests.framework */; };
+		E814D525E22EEF0D15B82EE4 /* Pods_ElegantMediaiOSPracticalAssignment_ElegantMediaiOSPracticalAssignmentUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE13F236D60353134B03FC8D /* Pods_ElegantMediaiOSPracticalAssignment_ElegantMediaiOSPracticalAssignmentUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +50,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		01D5E2D2FA71B1A60745901D /* Pods-ElegantMediaiOSPracticalAssignment-ElegantMediaiOSPracticalAssignmentUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ElegantMediaiOSPracticalAssignment-ElegantMediaiOSPracticalAssignmentUITests.release.xcconfig"; path = "Target Support Files/Pods-ElegantMediaiOSPracticalAssignment-ElegantMediaiOSPracticalAssignmentUITests/Pods-ElegantMediaiOSPracticalAssignment-ElegantMediaiOSPracticalAssignmentUITests.release.xcconfig"; sourceTree = "<group>"; };
+		48316B739ADEFF916709938A /* Pods_ElegantMediaiOSPracticalAssignmentTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ElegantMediaiOSPracticalAssignmentTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F11CC1324E4364600EA1419 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		4F11CC1624E4396C00EA1419 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		4F11CC1824E439B500EA1419 /* HotelListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotelListViewController.swift; sourceTree = "<group>"; };
+		4F11CC1B24E43F0800EA1419 /* HotelListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotelListTableViewCell.swift; sourceTree = "<group>"; };
+		4F11CC1D24E4425E00EA1419 /* HotelDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotelDetailsViewController.swift; sourceTree = "<group>"; };
+		4F11CC1F24E448AF00EA1419 /* HotelLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotelLocationViewController.swift; sourceTree = "<group>"; };
+		4F11CC2324E450B900EA1419 /* HeaderHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderHelper.swift; sourceTree = "<group>"; };
+		4F11CC2524E450C000EA1419 /* RequestHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestHelpers.swift; sourceTree = "<group>"; };
+		4F11CC2624E450C100EA1419 /* RequestUrls.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestUrls.swift; sourceTree = "<group>"; };
+		4F13E23924E4523200B3D06B /* HotelViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotelViewModel.swift; sourceTree = "<group>"; };
+		4F13E23B24E453B000B3D06B /* HotelModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotelModel.swift; sourceTree = "<group>"; };
 		4F7A72B724E434CD0012A788 /* ElegantMediaiOSPracticalAssignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ElegantMediaiOSPracticalAssignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F7A72BA24E434CE0012A788 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4F7A72BC24E434CE0012A788 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -51,6 +78,13 @@
 		4F7A72DB24E434D00012A788 /* ElegantMediaiOSPracticalAssignmentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ElegantMediaiOSPracticalAssignmentUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F7A72DF24E434D00012A788 /* ElegantMediaiOSPracticalAssignmentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElegantMediaiOSPracticalAssignmentUITests.swift; sourceTree = "<group>"; };
 		4F7A72E124E434D00012A788 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6F1E4CA21215F7F4A9563922 /* Pods-ElegantMediaiOSPracticalAssignmentTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ElegantMediaiOSPracticalAssignmentTests.release.xcconfig"; path = "Target Support Files/Pods-ElegantMediaiOSPracticalAssignmentTests/Pods-ElegantMediaiOSPracticalAssignmentTests.release.xcconfig"; sourceTree = "<group>"; };
+		7E5C7757F9BDC4E99F039EB4 /* Pods-ElegantMediaiOSPracticalAssignment-ElegantMediaiOSPracticalAssignmentUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ElegantMediaiOSPracticalAssignment-ElegantMediaiOSPracticalAssignmentUITests.debug.xcconfig"; path = "Target Support Files/Pods-ElegantMediaiOSPracticalAssignment-ElegantMediaiOSPracticalAssignmentUITests/Pods-ElegantMediaiOSPracticalAssignment-ElegantMediaiOSPracticalAssignmentUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		83999719FCD8063AC9296651 /* Pods_ElegantMediaiOSPracticalAssignment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ElegantMediaiOSPracticalAssignment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		91A7136706D9C2EA9F7FC971 /* Pods-ElegantMediaiOSPracticalAssignmentTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ElegantMediaiOSPracticalAssignmentTests.debug.xcconfig"; path = "Target Support Files/Pods-ElegantMediaiOSPracticalAssignmentTests/Pods-ElegantMediaiOSPracticalAssignmentTests.debug.xcconfig"; sourceTree = "<group>"; };
+		97F462523AF8C2C2652F3F7E /* Pods-ElegantMediaiOSPracticalAssignment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ElegantMediaiOSPracticalAssignment.debug.xcconfig"; path = "Target Support Files/Pods-ElegantMediaiOSPracticalAssignment/Pods-ElegantMediaiOSPracticalAssignment.debug.xcconfig"; sourceTree = "<group>"; };
+		DE9BAA59C30648264C7B3744 /* Pods-ElegantMediaiOSPracticalAssignment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ElegantMediaiOSPracticalAssignment.release.xcconfig"; path = "Target Support Files/Pods-ElegantMediaiOSPracticalAssignment/Pods-ElegantMediaiOSPracticalAssignment.release.xcconfig"; sourceTree = "<group>"; };
+		EE13F236D60353134B03FC8D /* Pods_ElegantMediaiOSPracticalAssignment_ElegantMediaiOSPracticalAssignmentUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ElegantMediaiOSPracticalAssignment_ElegantMediaiOSPracticalAssignmentUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6EEAC2DF0FFD14737F061D25 /* Pods_ElegantMediaiOSPracticalAssignment.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +100,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8FCC801951E940C1406BCDBA /* Pods_ElegantMediaiOSPracticalAssignmentTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,12 +108,83 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E814D525E22EEF0D15B82EE4 /* Pods_ElegantMediaiOSPracticalAssignment_ElegantMediaiOSPracticalAssignmentUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4F11CC0E24E4361000EA1419 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4F11CC1224E4362C00EA1419 /* Components */,
+				4F11CC1124E4362500EA1419 /* Controllers */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4F11CC0F24E4361A00EA1419 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4F13E23B24E453B000B3D06B /* HotelModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4F11CC1024E4361F00EA1419 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				4F13E23924E4523200B3D06B /* HotelViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		4F11CC1124E4362500EA1419 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4F11CC1324E4364600EA1419 /* LoginViewController.swift */,
+				4F11CC1824E439B500EA1419 /* HotelListViewController.swift */,
+				4F11CC1D24E4425E00EA1419 /* HotelDetailsViewController.swift */,
+				4F11CC1F24E448AF00EA1419 /* HotelLocationViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		4F11CC1224E4362C00EA1419 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				4F11CC1A24E43EF600EA1419 /* HotelListTableViewCell */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		4F11CC1524E4395E00EA1419 /* Constrain */ = {
+			isa = PBXGroup;
+			children = (
+				4F11CC1624E4396C00EA1419 /* File.swift */,
+			);
+			path = Constrain;
+			sourceTree = "<group>";
+		};
+		4F11CC1A24E43EF600EA1419 /* HotelListTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				4F11CC1B24E43F0800EA1419 /* HotelListTableViewCell.swift */,
+			);
+			path = HotelListTableViewCell;
+			sourceTree = "<group>";
+		};
+		4F11CC2124E4503C00EA1419 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				4F11CC2324E450B900EA1419 /* HeaderHelper.swift */,
+				4F11CC2524E450C000EA1419 /* RequestHelpers.swift */,
+				4F11CC2624E450C100EA1419 /* RequestUrls.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		4F7A72AE24E434CD0012A788 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +192,8 @@
 				4F7A72D324E434D00012A788 /* ElegantMediaiOSPracticalAssignmentTests */,
 				4F7A72DE24E434D00012A788 /* ElegantMediaiOSPracticalAssignmentUITests */,
 				4F7A72B824E434CD0012A788 /* Products */,
+				9FECC514B96FFCA8A26B9FF4 /* Pods */,
+				AF16D5DC2D6538531D10A663 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,6 +210,11 @@
 		4F7A72B924E434CD0012A788 /* ElegantMediaiOSPracticalAssignment */ = {
 			isa = PBXGroup;
 			children = (
+				4F11CC2124E4503C00EA1419 /* Services */,
+				4F11CC1524E4395E00EA1419 /* Constrain */,
+				4F11CC1024E4361F00EA1419 /* ViewModel */,
+				4F11CC0F24E4361A00EA1419 /* Model */,
+				4F11CC0E24E4361000EA1419 /* View */,
 				4F7A72BA24E434CE0012A788 /* AppDelegate.swift */,
 				4F7A72BC24E434CE0012A788 /* SceneDelegate.swift */,
 				4F7A72BE24E434CE0012A788 /* ViewController.swift */,
@@ -131,6 +245,29 @@
 			path = ElegantMediaiOSPracticalAssignmentUITests;
 			sourceTree = "<group>";
 		};
+		9FECC514B96FFCA8A26B9FF4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				97F462523AF8C2C2652F3F7E /* Pods-ElegantMediaiOSPracticalAssignment.debug.xcconfig */,
+				DE9BAA59C30648264C7B3744 /* Pods-ElegantMediaiOSPracticalAssignment.release.xcconfig */,
+				7E5C7757F9BDC4E99F039EB4 /* Pods-ElegantMediaiOSPracticalAssignment-ElegantMediaiOSPracticalAssignmentUITests.debug.xcconfig */,
+				01D5E2D2FA71B1A60745901D /* Pods-ElegantMediaiOSPracticalAssignment-ElegantMediaiOSPracticalAssignmentUITests.release.xcconfig */,
+				91A7136706D9C2EA9F7FC971 /* Pods-ElegantMediaiOSPracticalAssignmentTests.debug.xcconfig */,
+				6F1E4CA21215F7F4A9563922 /* Pods-ElegantMediaiOSPracticalAssignmentTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		AF16D5DC2D6538531D10A663 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				83999719FCD8063AC9296651 /* Pods_ElegantMediaiOSPracticalAssignment.framework */,
+				EE13F236D60353134B03FC8D /* Pods_ElegantMediaiOSPracticalAssignment_ElegantMediaiOSPracticalAssignmentUITests.framework */,
+				48316B739ADEFF916709938A /* Pods_ElegantMediaiOSPracticalAssignmentTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -138,9 +275,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4F7A72E424E434D00012A788 /* Build configuration list for PBXNativeTarget "ElegantMediaiOSPracticalAssignment" */;
 			buildPhases = (
+				9086C71BEE1505610A812658 /* [CP] Check Pods Manifest.lock */,
 				4F7A72B324E434CD0012A788 /* Sources */,
 				4F7A72B424E434CD0012A788 /* Frameworks */,
 				4F7A72B524E434CD0012A788 /* Resources */,
+				03420597AF2B91D71C12DF44 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -155,6 +294,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4F7A72E724E434D00012A788 /* Build configuration list for PBXNativeTarget "ElegantMediaiOSPracticalAssignmentTests" */;
 			buildPhases = (
+				98B8CF36C1BEE42942813468 /* [CP] Check Pods Manifest.lock */,
 				4F7A72CC24E434D00012A788 /* Sources */,
 				4F7A72CD24E434D00012A788 /* Frameworks */,
 				4F7A72CE24E434D00012A788 /* Resources */,
@@ -173,9 +313,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4F7A72EA24E434D00012A788 /* Build configuration list for PBXNativeTarget "ElegantMediaiOSPracticalAssignmentUITests" */;
 			buildPhases = (
+				FFD022E90ABD35AE060C0B43 /* [CP] Check Pods Manifest.lock */,
 				4F7A72D724E434D00012A788 /* Sources */,
 				4F7A72D824E434D00012A788 /* Frameworks */,
 				4F7A72D924E434D00012A788 /* Resources */,
+				A00BDA491682D8C5FA22D929 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -257,15 +399,129 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		03420597AF2B91D71C12DF44 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ElegantMediaiOSPracticalAssignment/Pods-ElegantMediaiOSPracticalAssignment-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ElegantMediaiOSPracticalAssignment/Pods-ElegantMediaiOSPracticalAssignment-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ElegantMediaiOSPracticalAssignment/Pods-ElegantMediaiOSPracticalAssignment-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9086C71BEE1505610A812658 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ElegantMediaiOSPracticalAssignment-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		98B8CF36C1BEE42942813468 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ElegantMediaiOSPracticalAssignmentTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A00BDA491682D8C5FA22D929 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ElegantMediaiOSPracticalAssignment-ElegantMediaiOSPracticalAssignmentUITests/Pods-ElegantMediaiOSPracticalAssignment-ElegantMediaiOSPracticalAssignmentUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ElegantMediaiOSPracticalAssignment-ElegantMediaiOSPracticalAssignmentUITests/Pods-ElegantMediaiOSPracticalAssignment-ElegantMediaiOSPracticalAssignmentUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ElegantMediaiOSPracticalAssignment-ElegantMediaiOSPracticalAssignmentUITests/Pods-ElegantMediaiOSPracticalAssignment-ElegantMediaiOSPracticalAssignmentUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FFD022E90ABD35AE060C0B43 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ElegantMediaiOSPracticalAssignment-ElegantMediaiOSPracticalAssignmentUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4F7A72B324E434CD0012A788 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F11CC2024E448AF00EA1419 /* HotelLocationViewController.swift in Sources */,
+				4F11CC2824E450C100EA1419 /* RequestUrls.swift in Sources */,
 				4F7A72BF24E434CE0012A788 /* ViewController.swift in Sources */,
+				4F11CC1724E4396C00EA1419 /* File.swift in Sources */,
+				4F11CC2724E450C100EA1419 /* RequestHelpers.swift in Sources */,
+				4F13E23A24E4523200B3D06B /* HotelViewModel.swift in Sources */,
+				4F11CC1C24E43F0800EA1419 /* HotelListTableViewCell.swift in Sources */,
 				4F7A72BB24E434CE0012A788 /* AppDelegate.swift in Sources */,
 				4F7A72C524E434CE0012A788 /* ElegantMediaiOSPracticalAssignment.xcdatamodeld in Sources */,
+				4F11CC1424E4364600EA1419 /* LoginViewController.swift in Sources */,
+				4F13E23C24E453B000B3D06B /* HotelModel.swift in Sources */,
+				4F11CC2424E450B900EA1419 /* HeaderHelper.swift in Sources */,
+				4F11CC1924E439B500EA1419 /* HotelListViewController.swift in Sources */,
 				4F7A72BD24E434CE0012A788 /* SceneDelegate.swift in Sources */,
+				4F11CC1E24E4425E00EA1419 /* HotelDetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -436,6 +692,7 @@
 		};
 		4F7A72E524E434D00012A788 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 97F462523AF8C2C2652F3F7E /* Pods-ElegantMediaiOSPracticalAssignment.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -454,6 +711,7 @@
 		};
 		4F7A72E624E434D00012A788 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DE9BAA59C30648264C7B3744 /* Pods-ElegantMediaiOSPracticalAssignment.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -472,6 +730,7 @@
 		};
 		4F7A72E824E434D00012A788 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 91A7136706D9C2EA9F7FC971 /* Pods-ElegantMediaiOSPracticalAssignmentTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -494,6 +753,7 @@
 		};
 		4F7A72E924E434D00012A788 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F1E4CA21215F7F4A9563922 /* Pods-ElegantMediaiOSPracticalAssignmentTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -516,6 +776,7 @@
 		};
 		4F7A72EB24E434D00012A788 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E5C7757F9BDC4E99F039EB4 /* Pods-ElegantMediaiOSPracticalAssignment-ElegantMediaiOSPracticalAssignmentUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -536,6 +797,7 @@
 		};
 		4F7A72EC24E434D00012A788 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 01D5E2D2FA71B1A60745901D /* Pods-ElegantMediaiOSPracticalAssignment-ElegantMediaiOSPracticalAssignmentUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
