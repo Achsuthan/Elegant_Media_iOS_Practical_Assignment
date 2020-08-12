@@ -14,7 +14,7 @@ class HeaderHelper {
     
     static func getCommonHeaders(withAuth: Bool = true) -> [String: String] {
         
-        var headers = ["Accept": "application/json",
+        let headers = ["Accept": "application/json",
                        "Content-Type": "application/json",
                        "device": "ios",
                        "version": "1"]

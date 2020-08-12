@@ -17,8 +17,6 @@ class UserHelper: HeaderHelper {
     
     static func callAPI(urlName: urlName, method: HttpMethod, parameters: [String:Any],completion: @escaping ((_ isSuccess: Bool, _ response: JSON?, _ error: AFError?) -> ())) {
         
-        let appDelegate = UIApplication.shared.delegate as! AppDelegate
-        
         let tparameter = parameters
         
         var urlString = ""
