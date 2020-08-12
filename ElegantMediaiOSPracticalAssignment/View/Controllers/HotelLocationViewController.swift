@@ -59,6 +59,7 @@ class HotelLocationViewController: UIViewController {
             self.checkLocationAuthorization()
         } else {
             // Do something to let users know why they need to turn it on.
+            //Need to connect with the user's app setting page
         }
     }
     
@@ -95,8 +96,6 @@ class HotelLocationViewController: UIViewController {
         let diameter = 1 * 2000
         let location = CLLocationCoordinate2D(latitude: Double(self.singleHotelDetails.latitude) ?? 0.00,
                                               longitude: Double(self.singleHotelDetails.longitude) ?? 0.00)
-        
-        print("location", location)
         
         let region: MKCoordinateRegion = MKCoordinateRegion(center: location, latitudinalMeters: CLLocationDistance(diameter), longitudinalMeters: CLLocationDistance(diameter))
         self.hotelLocationMap.setRegion(region, animated: false)

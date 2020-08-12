@@ -59,6 +59,8 @@ class HotelDetailsViewController: UIViewController, UIGestureRecognizerDelegate 
     
     //MARK: - Setup the navigation bar
     private func setUpNav(){
+        
+        //Enable the navigation bar and add the title to navigation bar with black colour
         self.navigationController?.isNavigationBarHidden = false
         self.navigationController?.navigationBar.barTintColor = APP_COLOR
         self.navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.black]
@@ -66,9 +68,11 @@ class HotelDetailsViewController: UIViewController, UIGestureRecognizerDelegate 
         self.navigationController?.navigationBar.titleTextAttributes = attributes
         self.navigationItem.title = "Details"
         
+        //Enable the swipe function of navigation controller
         self.navigationController?.interactivePopGestureRecognizer?.delegate = self
         self.navigationController?.interactivePopGestureRecognizer?.isEnabled = true
         
+        //Back button setup
         let backButton = UIButton(frame: CGRect(x: 0, y: 0, width: 10, height: 10))
         backButton.addTarget(self, action: #selector(self.btBack(_:)), for: .touchUpInside)
         let backbuttonImage = #imageLiteral(resourceName: "back")
@@ -77,7 +81,7 @@ class HotelDetailsViewController: UIViewController, UIGestureRecognizerDelegate 
         backButton.tintColor = .black
         self.navigationItem.leftBarButtonItem = UIBarButtonItem(customView: backButton)
         
-        
+        //Map button setup
         let mapButton = UIButton(frame: CGRect(x: 0, y: 0, width: 10, height: 10))
         mapButton.addTarget(self, action: #selector(self.btMap(_:)), for: .touchUpInside)
         let mapbuttonImage = #imageLiteral(resourceName: "location")
@@ -90,32 +94,34 @@ class HotelDetailsViewController: UIViewController, UIGestureRecognizerDelegate 
     //MARK: - setup all the UIs
     private func setUp(){
         self.view.backgroundColor = .white
-        
+        //Set the hotel image
         self.view.addSubview(self.hotelImage)
         self.hotelImage.topAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.topAnchor, constant: 10).isActive = true
         self.hotelImage.leadingAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.leadingAnchor, constant: 10).isActive = true
         self.hotelImage.trailingAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.trailingAnchor, constant: -10).isActive = true
         self.hotelImage.heightAnchor.constraint(equalToConstant: 200).isActive = true
         
-        
+        //Set the hotel name
         self.view.addSubview(self.lblHotelTitle)
         self.lblHotelTitle.topAnchor.constraint(equalTo: self.hotelImage.bottomAnchor, constant: 10).isActive = true
         self.lblHotelTitle.leadingAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.leadingAnchor, constant: 10).isActive = true
         self.lblHotelTitle.trailingAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.trailingAnchor, constant: -10).isActive = true
         
+        //Set the hotel discription label
         self.view.addSubview(self.lblHotelDiscription)
         self.lblHotelDiscription.topAnchor.constraint(equalTo: self.lblHotelTitle.bottomAnchor, constant: 20).isActive = true
         self.lblHotelDiscription.leadingAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.leadingAnchor, constant: 10).isActive = true
         self.lblHotelDiscription.trailingAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.trailingAnchor, constant: -10).isActive = true
         self.lblHotelDiscription.bottomAnchor.constraint(lessThanOrEqualTo: self.view.safeAreaLayoutGuide.bottomAnchor, constant: -10).isActive = true
     }
-    
+    //MARK: - Map button hanlder
     @IBAction func btMap(_: Any){
         let hotelLocationVc = HotelLocationViewController(nibName: nil, bundle: nil)
         hotelLocationVc.singleHotelDetails = self.singleHotelDetails
         self.navigationController?.pushViewController(hotelLocationVc, animated: true)
     }
     
+    //MARK: - Back button handler
     @IBAction func btBack(_ : Any){
         self.navigationController?.popViewController(animated: true)
     }

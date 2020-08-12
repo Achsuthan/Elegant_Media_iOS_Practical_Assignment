@@ -16,10 +16,13 @@ class HotelListViewController: UIViewController, UITableViewDelegate, UITableVie
         self.hotelTableView.reloadData()
     }
     
+    //MARK: - set how many rows in a tableview based on the API response
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.hotelViewModel.getHotelCount()
     }
     
+    
+    //MARK: - Setup the view for each cell with the relevent information
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let view  = tableView.dequeueReusableCell(withIdentifier: "HotelListTableViewCell", for: indexPath) as! HotelListTableViewCell
         let singleData = self.hotelViewModel.getSingleHotel(indexPath.row)
@@ -80,12 +83,14 @@ class HotelListViewController: UIViewController, UITableViewDelegate, UITableVie
     }()
     
     let hotelViewModel = HotelViewModel()
+    
+    //Name from parent view
     var name: String = "" {
         didSet{
             self.lblName.text = self.name
         }
     }
-    
+    //Email form parent view
     var email: String = "" {
         didSet {
             self.lblEmail.text = self.email
@@ -139,14 +144,18 @@ class HotelListViewController: UIViewController, UITableViewDelegate, UITableVie
         self.hotelTableView.trailingAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.trailingAnchor).isActive = true
         self.hotelTableView.bottomAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.bottomAnchor).isActive = true
         
+        //Register table view cell and delegate and datsouce to this view
         self.hotelTableView.register(HotelListTableViewCell.self, forCellReuseIdentifier: "HotelListTableViewCell")
         self.hotelTableView.delegate = self
         self.hotelTableView.dataSource = self
         
+        //Featch the details from API
         self.hotelViewModel.getAllHotelDetails()
         self.hotelViewModel.delegate = self
     }
     
+    
+    //MARK: - Logout button handler
     @IBAction func btLogout(_ : Any){
         let loginManger = LoginManager()
         loginManger.logOut()

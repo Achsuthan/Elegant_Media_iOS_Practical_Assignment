@@ -10,6 +10,7 @@ import UIKit
 import FBSDKLoginKit
 
 class LoginViewController: UIViewController, LoginButtonDelegate {
+    //Handle the login button click event from Facebook Loginbutton Delegate
     func loginButton(_ loginButton: FBLoginButton, didCompleteWith result: LoginManagerLoginResult?, error: Error?) {
         let request = FBSDKLoginKit.GraphRequest(graphPath: "me", parameters: ["fields":"email, name"], tokenString: result?.token?.tokenString, version: nil, httpMethod: .get)
         request.start { (completion, result, error) in
@@ -27,7 +28,7 @@ class LoginViewController: UIViewController, LoginButtonDelegate {
     }
     
     func loginButtonDidLogOut(_ loginButton: FBLoginButton) {
-        
+        //For logout , logout button is moved to hotel lisitng page
     }
     
     
@@ -53,10 +54,11 @@ class LoginViewController: UIViewController, LoginButtonDelegate {
     // MARK: - Set up the UI
     private func setUp(){
         
-        
+        //Check whether user already logged in or not if logged in move the user to hotel list page other wise keep the user on this page
         if let token = AccessToken.current, !token.isExpired {
             let token  = token.tokenString
             
+            //Featch the user's details from FB
             let request = FBSDKLoginKit.GraphRequest(graphPath: "me", parameters: ["fields":"email, name"], tokenString: token, version: nil, httpMethod: .get)
             request.start { (completion, result, error) in
                 guard let resultNew = result as? [String:Any] else {
